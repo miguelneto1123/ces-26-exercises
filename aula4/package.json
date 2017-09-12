@@ -1,0 +1,19 @@
+{
+  "name": "aula4",
+  "version": "1.0.0",
+  "description": "Node app with POST and GET requests, cookies and file handling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express-handlebars": "*",
+    "express-session": "*"
+  },
+  "author": "Miguel Neto",
+  "license": "ISC"
+}

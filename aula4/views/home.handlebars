@@ -1,0 +1,39 @@
+<p>Current session name: {{ name }}</p>
+<form action="http://localhost:3000/get" method="get">
+  <input type="text" name="name" id="name-get" placeholder="Insert your name here...">
+  <input type="submit" value="Send as a get request" id="get">
+</form>
+
+<form action="http://localhost:3000/post" method="post">
+  <input type="text" name="name" id="name-post" placeholder="Insert your name here...">
+  <input type="submit" value="Send as a post request" id="post">
+</form>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    let name;
+
+    $("#get").click(function(){
+      name=$("#name-get").val();
+      $.get("http://localhost:3000/get",{ name: name }, (data) => {
+        if(data==='done')
+          {
+            alert("Sent successfully");
+          }
+      });
+    });
+
+    $("#post").click(function(){
+      name=$("#name-post").val();
+      $.post("http://localhost:3000/post",{ name: name }, (data) => {
+        if(data==='done')
+          {
+            alert("Sent successfully");
+          }
+      });
+    });
+  });
+</script>
