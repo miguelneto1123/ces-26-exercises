@@ -1,0 +1,23 @@
+.square{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+.blue{
+  background-color: blue;
+  color: white;
+}
+
+.red{
+  background-color: red;
+  color: white;
+}
+
+.green{
+  background-color: green;
+}
