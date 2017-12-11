@@ -1,4 +1,6 @@
-# Aula7
+# Activity 7
+
+Simple show of `*ngFor` and `*ngIf` usage.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
