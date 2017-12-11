@@ -1,0 +1,12 @@
+<h1>Using *ngFor:</h1>
+
+<p>List of names:</p>
+
+<ul>
+  <li *ngFor="let name of names">{{name}}</li>
+</ul>
+
+<h1>Using *ngIf:</h1>
+
+<p *ngIf="names.indexOf('Julia') < 0">Julia is not on the list of names</p>
+<p *ngIf="names.indexOf('Charles') > -1">Charles is on the list of names</p>
